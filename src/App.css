@@ -1,0 +1,93 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+.titulo {
+    border-bottom: 8px solid rgb(212, 47, 149);
+    margin-bottom: 72px;
+    &::selection {
+        background-color: rgb(212, 47, 149);
+        color: #000;
+    }
+}
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    border: 1px solid grey;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+.delete {
+    align-self: flex-end;
+    transition: background 0.4s ease;
+    &:hover {
+        background-color: red;
+    }
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border: 2px solid rgb(212, 47, 149);
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 72px;
+    gap: 8px;
+}
+.formulario input {
+    padding: 12px 8px;
+    font-size: 16px;
+}
